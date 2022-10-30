@@ -1,0 +1,49 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="main.css">
+    <title>scroll</title>
+    <style>
+    body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+	}
+
+	ul {
+	  list-style-type: none;
+	}
+
+	.box {
+	  margin-left: 1000px;
+	  margin-top: 1000px;
+	}
+
+	.list {
+	  display: flex;
+	  flex-direction: column;
+	  align-items: center;
+	  height: 500px; width: 500px;
+	  margin: 0; padding: 50px;
+	  overflow-y: scroll;
+	  font-size: 100px;
+	  background-color: grey;
+	}
+	.list::-webkit-scrollbar {
+	  width: 0;
+	}
+
+    </style>
+</head>
+<body>
+  <h1>Endless scroll</h1>
+  <ul class="list">
+  	<li class="item">Still not end</li>
+  	<li class="item">Still not end</li>
+  	<li class="item">Still not end</li>
+  	<li class="item">Still not end</li>
+  	<li class="item">Still not end</li>
+  </ul>
+  <script src="script.js"></script>
+</body>
+</html>
